@@ -1,9 +1,11 @@
 echo "enter the firstname"
 echo "enter the lastname"
-cho "enter the emailid"
+echo "enter the emailid"
+echo "enter the mobilenumber"
 read firstname
 read lastname
 read emailid
+read mobilenumber
 user="^[A-Z]{1}[a-z]"
 ##Verify for user name
 if [[ $firstname =~ $user ]] && [[ $firstname =~ $user ]] 
@@ -20,3 +22,12 @@ echo "emailid correct"
 else
 echo "emailid no correct"
 fi
+##Verify for mobilenumber
+number="^[+][0-9]{2}[ ]([0-9]{10})$"
+if [[ $mobile =~ $number ]]
+then
+echo "mobile is correct"
+else
+echo "mobile is notcorrect"
+fi
+
