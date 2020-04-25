@@ -1,6 +1,6 @@
 echo "enter the firstname"
 echo "enter the lastname"
-cho "enter the emailid"
+echo "enter the emailid"
 read firstname
 read lastname
 read emailid
